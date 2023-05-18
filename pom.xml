@@ -10,6 +10,15 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>spring-boot-example</artifactId>
+	<configuration>
+    <image>
+     <name>javaspring123.azurecr.io/${project.artifactId}</name>
+    </image>
+    <layers>
+     <enabled>true</enabled>
+     <includeLayerTools>true</includeLayerTools>
+    </layers>
+   </configuration>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-boot-example</name>
 	<description>Demo project for Spring Boot to build using Azure DevOps</description>
